@@ -1,0 +1,22 @@
+name: Tests
+
+on:
+  push:
+  pull_request:
+
+permissions:
+  contents: read
+
+jobs:
+  test:
+    runs-on: ubuntu-24.04
+    steps:
+      - uses: actions/checkout@v4
+      - name: Install Tk and the virtual display
+        run: sudo apt-get update && sudo apt-get install -y python3-tk xvfb
+      - name: Run rule, computer opponent, and graphical tests
+        run: xvfb-run -a python3 -m unittest discover -s tests -v
+      - name: Verify that the standalone file is up to date
+        run: |
+          python3 build_standalone.py
+          git diff --exit-code -- Shardturn.py
