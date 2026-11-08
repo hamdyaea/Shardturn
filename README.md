@@ -20,7 +20,7 @@ You need **Python 3.9 or newer with Tkinter**.
 Clone the repository and launch the standalone edition:
 
 ```bash
-git clone https://github.com/hamdyaea/Shadturn.git Shardturn
+git clone https://github.com/hamdyaea/Shardturn.git
 cd Shardturn
 python3 Shardturn.py
 ```
@@ -97,7 +97,11 @@ Graphical tests require a desktop session or Xvfb. Engine and computer-player te
 
 ## License and references
 
-Shardturn's source code and original vector assets are licensed under **GPL-3.0-or-later**. See [LICENSE](LICENSE).
+Copyright (C) 2026 Hamdy Abou El Anein.
+
+Shardturn's source code and original vector assets are free software under the **GNU General Public License, version 3 or (at your option) any later version** (`GPL-3.0-or-later`). See the complete license in [LICENSE](LICENSE).
+
+This software is provided without warranty; see the license for details.
 
 Shardturn is an independent project and is not affiliated with Mattel. Its name, cards and interface use their own visual identity.
 
